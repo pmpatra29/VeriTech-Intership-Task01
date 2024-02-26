@@ -187,17 +187,16 @@ public class Board extends JPanel implements ActionListener {
         public void keyPressed(KeyEvent e) {
             int key = e.getKeyCode();
             
-            // Pause or resume the game when space bar is pressed
             if (key == KeyEvent.VK_SPACE) {
                 if (inGame) {
                     isPaused = !isPaused;
                     if (isPaused) {
-                        timer.stop(); // Pause the timer
+                        timer.stop(); 
                     } else {
-                        timer.start(); // Resume the timer
+                        timer.start(); 
                     }
                 }
-            } else if (inGame && !isPaused) { // Handle other key presses only if the game is not paused
+            } else if (inGame && !isPaused) {
                 if (key == KeyEvent.VK_LEFT && !rightDirection) {
                     leftDirection = true;
                     upDirection = false;
@@ -220,7 +219,6 @@ public class Board extends JPanel implements ActionListener {
                 }
             }
             
-            // Restart the game when Enter key is pressed after game over
             if (!inGame && key == KeyEvent.VK_ENTER) {
                 inGame = true;
                 initGame();
