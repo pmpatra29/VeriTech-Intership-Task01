@@ -3,6 +3,13 @@ made a Snake Game using Java's OOPs Concept and Java Swing for building the app.
 
 
 
+# Snake Game README
+
+Welcome to Snake Game 🐍, a classic arcade-style game where you control a snake to eat apples 🍎 and grow longer while avoiding collisions with walls and the snake's own body.
+
+
+
+
 ## Installation:
 
 ### Download:
